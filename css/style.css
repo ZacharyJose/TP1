@@ -928,8 +928,11 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  /* padding-top: 11px; */
+  /* padding-bottom: 50px; */
+  padding: 20px 0px;
+  height: 203px;
+  width: auto;
 }
 
 .global {
@@ -943,8 +946,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   /*Poussée vers la gauche pour ne pas voir le menu*/
-  -webkit-transform: translateX(-50vw);
-          transform: translateX(-50vw);
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
   /*Effet de transition sur la transformation*/
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -972,11 +975,11 @@ body {
   background-color: #202322;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-  width: 50vw;
+  width: 100vw;
   /*Propriété comme item flex - ne peut rétrécir*/
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
   /*Contexte flex en colonne pour ses enfants*/
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1007,19 +1010,15 @@ body {
 }
 
 .sidebar {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: sidebar;
 }
 
 .sidebar2 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: sidebar2;
 }
 
 .content {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: content;
 }
@@ -1031,7 +1030,7 @@ body {
 }
 
 .footer {
-  -ms-grid-row: 5;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
 }
@@ -1061,7 +1060,7 @@ body {
   display: grid;
   width: 100vw;
   grid-gap: 1em;
-      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
+      grid-template-areas: "header"  "content"  "footer";
 }
 
 @media only screen and (min-width: 500px) {
@@ -1089,6 +1088,10 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .Logo {
+    height: 400px;
+    width: auto;
   }
   .menu {
     /*Propriété comme item flex - ne peut s'étirer en hauteur*/

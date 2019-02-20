@@ -23,10 +23,13 @@ background-repeat: no-repeat;
 
 .Logo {
 	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 11px; */
+    /* padding-bottom: 50px; */
+    padding: 20px 0px;
+    height: 203px;
+    width: auto;
 }
 
 .global {
@@ -36,7 +39,7 @@ background-repeat: no-repeat;
 	/*Conteneur flex en rangée*/
 	display: flex;
 	/*Poussée vers la gauche pour ne pas voir le menu*/
-	transform: translateX(-50vw); 
+	transform: translateX(-100vw); 
 	/*Effet de transition sur la transformation*/
 	transition: transform 1s;
 	/*	overflow-x: hidden; */
@@ -57,9 +60,9 @@ background-repeat: no-repeat;
 		background-color : $color__menu-nav;
 		text-align: center;
 		/*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-		width: 50vw;
+		width: 100vw;
 		/*Propriété comme item flex - ne peut rétrécir*/
-		flex: 1 0 50%;
+		flex: 1 0 100%;
 		/*Contexte flex en colonne pour ses enfants*/
 		display: flex;
 		flex-direction: column;
@@ -124,9 +127,9 @@ background-repeat: no-repeat;
 		grid-gap: 1em;
 		grid-template-areas:
 			"header"
-			"sidebar"
+			
 			"content"
-			"sidebar2"
+			
 			"footer"
 }
 
@@ -158,6 +161,11 @@ background-repeat: no-repeat;
 		transform: translateX(0%);
 		/*Mettre le contenu en colonne*/
 		flex-direction: column;
+	}
+
+	.Logo{
+		height: 400px;
+		width: auto;
 	}
 
 	.menu {

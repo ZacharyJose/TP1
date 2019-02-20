@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Exercice 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+</head>
+
+<!-- AJOUT IMAGE DE FOND DE PAGE -->
+<body class="Fond">
+
+  
+
+<input type="checkbox" id="chkBoutonBurger" />
+<label for="chkBoutonBurger" class="boutonBurger"></label>
+<div class="global">
+        
+<nav class="menu">
+        <a href="#">BOUTON 1</a>
+        <a href="#">BOUTON 2</a>
+        <a href="#">BOUTON 3</a>
+        <a href="#">BOUTON 4</a>
+        <a href="#">BOUTON 5</a>
+        <a href="#">BOUTON 6</a>
+    </nav> <!-- fin menu -->
+
+    <!-- AJOUT LOGO -->
+    <img class="Logo" src="img/Logo.png" height="150" width="150">
+
+    <nav class="menu">
+        <main class="conteneur">
+            <header class="box header"></header>
+            <section class="box content">Contenu
+La hauteur de la cellule s'ajustera au contenu. La hauteur de la cellule s'ajustera au contenu. La hauteur de la
+cellule s'ajustera au contenu. La hauteur de la cellule s'ajustera au contenu. La hauteur de la cellule s'ajustera au
+contenu. La hauteur de la cellule s'ajustera au contenu.  </section>
+            <footer class="box footer">Footer</footer>
+        </main>
+    </div>
+</body>
+<!-- 
+Avec les modules on a plus besoin d'inclure l'ensemble des scripts un
+à la suite des autres, maintenant, il suffit d'identifier le module principale 
+et celui-ci importera tout les autres.
+
+REMARQUE: il est important de définir le type comme étant : module
+-->
+<script type='module' src='./module_js/application.js'></script>
+</html>

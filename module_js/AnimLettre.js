@@ -35,7 +35,7 @@ animerLettre(lesLettres) {
             'div',
             uneLettre,
             '')
-        elmlettre.style.animationDelay = (i * 0.5) + "s";
+        elmlettre.style.animationDelay = (i * 0.1) + "s";
         elmlettre.style.color = this.tabCouleur[(i++) % 6]
     }
 

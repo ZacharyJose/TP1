@@ -133,6 +133,13 @@ background-repeat: no-repeat;
 			"footer"
 }
 
+@media only screen and (max-width: 500px) {
+	.Fond {
+		background-image: url("../img/FondMobile.jpg");
+		background-repeat: repeat-y;
+		
+		}
+	}
 @media only screen and (min-width: 500px) {
 	.conteneur {
 

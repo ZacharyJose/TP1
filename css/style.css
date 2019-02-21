@@ -1070,6 +1070,10 @@ body {
         grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
     min-width: 500px;
   }
+  .Fond {
+    background-image: url("../img/FondTablette.jpg");
+    background-repeat: repeat-y;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -1092,6 +1096,10 @@ body {
   .Logo {
     height: 400px;
     width: auto;
+  }
+  .Fond {
+    background-image: url("../img/Fond.jpg");
+    background-repeat: no-repeat;
   }
   .menu {
     /*Propriété comme item flex - ne peut s'étirer en hauteur*/

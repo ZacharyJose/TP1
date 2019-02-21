@@ -139,7 +139,11 @@ background-repeat: no-repeat;
 		background-repeat: repeat-y;
 		
 		}
+
+	
+
 	}
+
 @media only screen and (min-width: 500px) {
 	.conteneur {
 
@@ -159,6 +163,12 @@ background-repeat: no-repeat;
 		
 		}
 
+		.Logo:hover{
+			height: 400px;
+			width: auto;
+			transform: scale(.7);
+			transition-duration: 1s;
+		}
 
 }
 
@@ -181,6 +191,15 @@ background-repeat: no-repeat;
 	.Logo{
 		height: 400px;
 		width: auto;
+		transform: scale(.7);
+		transition-duration: 1s;
+	}
+
+	.Logo:hover{
+		height: 400px;
+		width: auto;
+		transform: scale(1);
+		transition-duration: 1s;
 	}
 
 	.Fond {

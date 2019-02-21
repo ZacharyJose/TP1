@@ -1081,6 +1081,14 @@ body {
     background-image: url("../img/FondTablette.jpg");
     background-repeat: repeat-y;
   }
+  .Logo:hover {
+    height: 400px;
+    width: auto;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -1103,6 +1111,18 @@ body {
   .Logo {
     height: 400px;
     width: auto;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .Logo:hover {
+    height: 400px;
+    width: auto;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
   }
   .Fond {
     background-image: url("../img/Fond.jpg");

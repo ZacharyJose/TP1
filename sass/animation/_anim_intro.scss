@@ -7,7 +7,6 @@
 
 .rectangle {
     // font-size: 1em;
-  
     min-height: 2em;
     width: 50%;
     display: flex;
@@ -36,12 +35,14 @@
     background-color:rgba(0, 0, 0, 1);
     color: white;
     animation: anim2 0.5s 0.5s backwards;
+    
 }
 
 .rectangle:nth-child(2):hover {
     background-color:rgba(0, 0, 0, 0);
     background-image: url("../img/Joel1.jpg");
     animation: anim2 0.5s 0.5s backwards;
+    
 }
 
 .rectangle:nth-child(3) {

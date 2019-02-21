@@ -35,7 +35,7 @@
     background-color:rgba(0, 0, 0, 1);
     color: white;
     animation: anim2 0.5s 0.5s backwards;
-    
+    transform: scale(1);
 }
 
 .rectangle:nth-child(2):hover {

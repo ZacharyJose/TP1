@@ -678,25 +678,41 @@ a:hover, a:active {
 }
 
 .rectangle:nth-child(1) {
-  background-color: #e54792;
+  background-color: #202322;
   -webkit-animation: anim1 0.5s;
           animation: anim1 0.5s;
 }
 
 .rectangle:nth-child(2) {
-  background-color: #f59723;
+  background-color: black;
+  color: white;
+  -webkit-animation: anim2 0.5s 0.5s backwards;
+          animation: anim2 0.5s 0.5s backwards;
+}
+
+.rectangle:nth-child(2):hover {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/Joel1.jpg");
   -webkit-animation: anim2 0.5s 0.5s backwards;
           animation: anim2 0.5s 0.5s backwards;
 }
 
 .rectangle:nth-child(3) {
-  background-color: #58b34c;
+  background-color: black;
+  color: white;
+  -webkit-animation: anim3 0.5s 1s backwards;
+          animation: anim3 0.5s 1s backwards;
+}
+
+.rectangle:nth-child(3):hover {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/Ellie2.jpg");
   -webkit-animation: anim3 0.5s 1s backwards;
           animation: anim3 0.5s 1s backwards;
 }
 
 .rectangle:nth-child(4) {
-  background-color: #006d98;
+  background-color: #202322;
   font-size: 1em;
   /* max-height : 20vh;*/
   -webkit-animation: animGo 1s 1.5s backwards;
@@ -888,6 +904,7 @@ html {
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0px;
   max-width: 100vw;
   min-height: 100vh;
@@ -899,6 +916,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
+}
+
+.Fond {
+  background-image: url("../img/Fond.jpg");
+  background-repeat: no-repeat;
+}
+
+.Logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: 11px; */
+  /* padding-bottom: 50px; */
+  padding: 20px 0px;
+  height: 203px;
+  width: auto;
 }
 
 .global {
@@ -912,8 +946,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   /*Poussée vers la gauche pour ne pas voir le menu*/
-  -webkit-transform: translateX(-50vw);
-          transform: translateX(-50vw);
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
   /*Effet de transition sur la transformation*/
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -938,14 +972,14 @@ body {
 }
 
 .menu {
-  background-color: #8d4b4b;
+  background-color: #202322;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-  width: 50vw;
+  width: 100vw;
   /*Propriété comme item flex - ne peut rétrécir*/
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
   /*Contexte flex en colonne pour ses enfants*/
   display: -webkit-box;
   display: -ms-flexbox;
@@ -976,19 +1010,15 @@ body {
 }
 
 .sidebar {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: sidebar;
 }
 
 .sidebar2 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: sidebar2;
 }
 
 .content {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: content;
 }
@@ -1000,13 +1030,13 @@ body {
 }
 
 .footer {
-  -ms-grid-row: 5;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
 }
 
 .conteneur {
-  background-color: #fff;
+  background-color: black;
   color: #444;
 }
 
@@ -1025,11 +1055,12 @@ body {
           flex-flow: column nowrap;
   overflow-x: hidden;
   overflow-y: auto;
+  padding-bottom: 20px;
   display: -ms-grid;
   display: grid;
   width: 100vw;
   grid-gap: 1em;
-      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
+      grid-template-areas: "header"  "content"  "footer";
 }
 
 @media only screen and (min-width: 500px) {
@@ -1058,9 +1089,13 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .Logo {
+    height: 400px;
+    width: auto;
+  }
   .menu {
     /*Propriété comme item flex - ne peut s'étirer en hauteur*/
-    width: 97vw;
+    width: 100vw;
     margin-bottom: 10px;
     border-radius: 10px;
     -webkit-box-flex: 0;
@@ -1096,7 +1131,7 @@ body {
 }
 
 .box {
-  background-color: #444;
+  background-color: #202322;
   color: #fff;
   border-radius: 5px;
   padding: 10px;
@@ -1105,11 +1140,11 @@ body {
 
 .header,
 .footer {
-  background-color: #999;
+  background-color: black;
 }
 
 .sidebar2 {
-  background-color: #ccc;
+  background-color: black;
   color: #444;
 }
 /*# sourceMappingURL=style.css.map */

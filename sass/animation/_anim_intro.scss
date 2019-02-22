@@ -28,27 +28,28 @@
 
 .rectangle:nth-child(1) {
     background-color: #202322;
-    animation: anim1 0.5s;
+    animation: anim1 2s;
+   
 }
 
 .rectangle:nth-child(2) {
     background-color:rgba(0, 0, 0, 1);
     color: white;
-    animation: anim2 0.5s 0.5s backwards;
+    animation: anim2 1.5s backwards;
     transform: scale(1);
 }
 
 .rectangle:nth-child(2):hover {
     background-color:rgba(0, 0, 0, 0);
     background-image: url("../img/Joel1.jpg");
-    animation: anim2 0.5s 0.5s backwards;
+    animation: anim2 1.5s backwards;
     
 }
 
 .rectangle:nth-child(3) {
     background-color:rgba(0, 0, 0, 1);
     color: white;
-    animation: anim3 0.5s 1s backwards;
+    animation: anim3 1.5s backwards;
 
 }
 
@@ -58,7 +59,7 @@
     background-image: url("../img/Ellie2.jpg");
     
     
-    animation: anim3 0.5s 1s backwards;
+    animation: anim3 1.5s backwards;
 
 }
 
@@ -67,7 +68,7 @@
     font-size: 1em;
     /* max-height : 20vh;*/
 
-    animation: animGo 1s 1.5s backwards;
+    animation: animGo 2.5s .5s backwards;
 }
 
 .deplacementContenuIntro {
@@ -76,43 +77,43 @@
 
 @keyframes anim1 {
     from {
-        transform: translateY(-50vh) rotate(-45deg);
+        transform: translateY(-50vh) ;
 
     }
 
     to {
-        transform: translateY(0%) rotate(0);
+        transform: translateY(0%) ;
     }
 }
 
 @keyframes anim2 {
     from {
-        transform: translateX(-200%) rotate(-45deg);
+        transform: translateX(-200%) ;
     }
 
     to {
-        transform: translateX(0%) rotate(0);
+        transform: translateX(0%) ;
     }
 }
 
 @keyframes anim3 {
     from {
-        transform: translateX(200%) rotate(-45deg);
+        transform: translateX(-200%) ;
     }
 
     to {
-        transform: translateX(0%) rotate(0);
+        transform: translateX(0%) ;
     }
 }
 
 @keyframes animGo {
     from {
-        transform: translateY(200vh) rotate(-45deg);
+        transform: translateX(200vh) ;
     }
 
     50%,
     to {
-        transform: translateY(0%) rotate(0);
+        transform: translateX(0%) ;
     }
 }
 

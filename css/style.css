@@ -679,15 +679,15 @@ a:hover, a:active {
 
 .rectangle:nth-child(1) {
   background-color: #202322;
-  -webkit-animation: anim1 0.5s;
-          animation: anim1 0.5s;
+  -webkit-animation: anim1 2s;
+          animation: anim1 2s;
 }
 
 .rectangle:nth-child(2) {
   background-color: black;
   color: white;
-  -webkit-animation: anim2 0.5s 0.5s backwards;
-          animation: anim2 0.5s 0.5s backwards;
+  -webkit-animation: anim2 1.5s backwards;
+          animation: anim2 1.5s backwards;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -695,30 +695,30 @@ a:hover, a:active {
 .rectangle:nth-child(2):hover {
   background-color: rgba(0, 0, 0, 0);
   background-image: url("../img/Joel1.jpg");
-  -webkit-animation: anim2 0.5s 0.5s backwards;
-          animation: anim2 0.5s 0.5s backwards;
+  -webkit-animation: anim2 1.5s backwards;
+          animation: anim2 1.5s backwards;
 }
 
 .rectangle:nth-child(3) {
   background-color: black;
   color: white;
-  -webkit-animation: anim3 0.5s 1s backwards;
-          animation: anim3 0.5s 1s backwards;
+  -webkit-animation: anim3 1.5s backwards;
+          animation: anim3 1.5s backwards;
 }
 
 .rectangle:nth-child(3):hover {
   background-color: rgba(0, 0, 0, 0);
   background-image: url("../img/Ellie2.jpg");
-  -webkit-animation: anim3 0.5s 1s backwards;
-          animation: anim3 0.5s 1s backwards;
+  -webkit-animation: anim3 1.5s backwards;
+          animation: anim3 1.5s backwards;
 }
 
 .rectangle:nth-child(4) {
   background-color: #202322;
   font-size: 1em;
   /* max-height : 20vh;*/
-  -webkit-animation: animGo 1s 1.5s backwards;
-          animation: animGo 1s 1.5s backwards;
+  -webkit-animation: animGo 2.5s .5s backwards;
+          animation: animGo 2.5s .5s backwards;
 }
 
 .deplacementContenuIntro {
@@ -728,91 +728,91 @@ a:hover, a:active {
 
 @-webkit-keyframes anim1 {
   from {
-    -webkit-transform: translateY(-50vh) rotate(-45deg);
-            transform: translateY(-50vh) rotate(-45deg);
+    -webkit-transform: translateY(-50vh);
+            transform: translateY(-50vh);
   }
   to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 @keyframes anim1 {
   from {
-    -webkit-transform: translateY(-50vh) rotate(-45deg);
-            transform: translateY(-50vh) rotate(-45deg);
+    -webkit-transform: translateY(-50vh);
+            transform: translateY(-50vh);
   }
   to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 @-webkit-keyframes anim2 {
   from {
-    -webkit-transform: translateX(-200%) rotate(-45deg);
-            transform: translateX(-200%) rotate(-45deg);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
   }
   to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes anim2 {
   from {
-    -webkit-transform: translateX(-200%) rotate(-45deg);
-            transform: translateX(-200%) rotate(-45deg);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
   }
   to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @-webkit-keyframes anim3 {
   from {
-    -webkit-transform: translateX(200%) rotate(-45deg);
-            transform: translateX(200%) rotate(-45deg);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
   }
   to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes anim3 {
   from {
-    -webkit-transform: translateX(200%) rotate(-45deg);
-            transform: translateX(200%) rotate(-45deg);
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
   }
   to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @-webkit-keyframes animGo {
   from {
-    -webkit-transform: translateY(200vh) rotate(-45deg);
-            transform: translateY(200vh) rotate(-45deg);
+    -webkit-transform: translateX(200vh);
+            transform: translateX(200vh);
   }
   50%,
   to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes animGo {
   from {
-    -webkit-transform: translateY(200vh) rotate(-45deg);
-            transform: translateY(200vh) rotate(-45deg);
+    -webkit-transform: translateX(200vh);
+            transform: translateX(200vh);
   }
   50%,
   to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 

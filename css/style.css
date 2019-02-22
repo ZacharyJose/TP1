@@ -375,7 +375,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
+  color: white;
   font-family: "Roboto", arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -513,9 +513,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: #252726 #252726 #252726;
   border-radius: 3px;
-  background: #e6e6e6;
+  background: #505352;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
@@ -527,7 +527,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
+  border-color: #505352 #505352 #505352;
 }
 
 button:active, button:focus,
@@ -537,7 +537,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  border-color: #aaa #bbb #bbb;
+  border-color: white white white;
 }
 
 input[type="text"],
@@ -942,6 +942,22 @@ body {
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
   /*	overflow-x: hidden; */
+}
+
+.bouton {
+  color: white;
+  font-size: 18px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  margin-top: 30px;
+}
+
+.bouton:hover {
+  color: black;
+  background-color: white;
+  font-size: 18px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .boutonBurger {

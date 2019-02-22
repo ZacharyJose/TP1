@@ -43,6 +43,21 @@ background-repeat: no-repeat;
 	/*Effet de transition sur la transformation*/
 	transition: transform 1s;
 	/*	overflow-x: hidden; */
+
+	}
+
+	.bouton {
+		color: white;
+		font-size: 18px;
+		transition-duration: 1s;
+	margin-top: 30px;
+	}
+
+	.bouton:hover {
+		color: black;
+		background-color:white;
+		font-size: 18px;
+		transition-duration: 1s;
 	}
 
 	.boutonBurger {

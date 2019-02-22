@@ -679,8 +679,9 @@ a:hover, a:active {
 
 .rectangle:nth-child(1) {
   background-color: #202322;
-  -webkit-animation: anim1 2s;
-          animation: anim1 2s;
+  -webkit-animation: anim1 1.5s;
+          animation: anim1 1.5s;
+  border-radius: 65px;
 }
 
 .rectangle:nth-child(2) {
@@ -716,6 +717,7 @@ a:hover, a:active {
 .rectangle:nth-child(4) {
   background-color: #202322;
   font-size: 1em;
+  border-radius: 65px;
   /* max-height : 20vh;*/
   -webkit-animation: animGo 2.5s .5s backwards;
           animation: animGo 2.5s .5s backwards;
@@ -1172,7 +1174,7 @@ body {
 .box {
   background-color: #202322;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 10px;
   font-size: 150%;
 }

@@ -1177,9 +1177,15 @@ body {
   font-size: 150%;
 }
 
-.header,
-.footer {
+.header {
   background-color: black;
+}
+
+.footer {
+  background-color: #26272b;
+  margin-top: 22px;
+  font-size: 15px;
+  color: #737373;
 }
 
 .sidebar2 {

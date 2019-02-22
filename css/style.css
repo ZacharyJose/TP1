@@ -728,6 +728,36 @@ a:hover, a:active {
           animation: deplacementContenuIntro 1s backwards;
 }
 
+@media only screen and (max-width: 500px) {
+  .rectangle:nth-child(2):hover {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../img/Joel1Mobile.jpg");
+    -webkit-animation: anim2 1.5s backwards;
+            animation: anim2 1.5s backwards;
+  }
+  .rectangle:nth-child(3):hover {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../img/ELLIE2Mobile.jpg");
+    -webkit-animation: anim3 1.5s backwards;
+            animation: anim3 1.5s backwards;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .rectangle:nth-child(2):hover {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../img/Joel1Mobile.jpg");
+    -webkit-animation: anim2 1.5s backwards;
+            animation: anim2 1.5s backwards;
+  }
+  .rectangle:nth-child(3):hover {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../img/ELLIE2Mobile.jpg");
+    -webkit-animation: anim3 1.5s backwards;
+            animation: anim3 1.5s backwards;
+  }
+}
+
 @-webkit-keyframes anim1 {
   from {
     -webkit-transform: translateY(-50vh);

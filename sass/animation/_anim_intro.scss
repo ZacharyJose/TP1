@@ -77,6 +77,58 @@
     animation: deplacementContenuIntro 1s backwards;
 }
 
+
+@media only screen and (max-width: 500px) {
+        
+    .rectangle:nth-child(2):hover {
+        background-color:rgba(0, 0, 0, 0);
+        background-image: url("../img/Joel1Mobile.jpg");
+        animation: anim2 1.5s backwards;
+        
+    }
+    
+  
+    .rectangle:nth-child(3):hover {
+        background-color:rgba(0, 0, 0, 0);
+        
+        background-image: url("../img/ELLIE2Mobile.jpg");
+        
+        
+        animation: anim3 1.5s backwards;
+    
+    }
+
+    
+
+    }
+
+
+    @media only screen and (max-width: 980px) {
+        
+        .rectangle:nth-child(2):hover {
+            background-color:rgba(0, 0, 0, 0);
+            background-image: url("../img/Joel1Mobile.jpg");
+            animation: anim2 1.5s backwards;
+            
+        }
+        
+      
+        .rectangle:nth-child(3):hover {
+            background-color:rgba(0, 0, 0, 0);
+            
+            background-image: url("../img/ELLIE2Mobile.jpg");
+            
+            
+            animation: anim3 1.5s backwards;
+        
+        }
+    
+        
+    
+        }
+
+
+
 @keyframes anim1 {
     from {
         transform: translateY(-50vh) ;
@@ -129,4 +181,9 @@
         transform: translateX(-100vw);
        
     }
+
+   
+
+
+
 }

@@ -13,13 +13,16 @@ body {
 	display: flex;
 	flex-direction: column; 
 	overflow:hidden;
+	
 }
 
 .Fond {
 
 background-image: url("../img/Fond.jpg");
 background-repeat: no-repeat;
+
 }
+
 
 .Logo {
 	display: block;
@@ -30,6 +33,19 @@ background-repeat: no-repeat;
     padding: 20px 0px;
     height: 203px;
     width: auto;
+}
+
+.Logo:hover {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 11px; */
+    /* padding-bottom: 50px; */
+    padding: 20px 0px;
+    height: 203px;
+	width: auto;
+	filter: blur(5px);
+	
 }
 
 .global {
@@ -272,7 +288,7 @@ background-repeat: no-repeat;
 
 
 .header {
-
+	
 	background-color: black;
 }
 
@@ -285,7 +301,4 @@ background-repeat: no-repeat;
   color:#737373;
 }
 
-.sidebar2 {
-	background-color: black;
-	color: #444;
-}
+

@@ -44,16 +44,21 @@ export class Introduction {
             this.titreSecondaire,
             'rectangle')
 
+        elmSecondaire.addEventListener('mousedown', this.testBouton1.bind(this))
 
         let elmTernaire = this.creerElement(elmConteneur,
             'div',
             this.titreTernaire,
             'rectangle')
 
+        elmTernaire.addEventListener('mousedown', this.testBouton2.bind(this))
+
         let elmDescription = this.creerElement(elmConteneur,
             'div',
             this.description,
             'rectangle')
+
+        
 
         let elmBouton = this.creerElement(elmConteneur,
             'button',
@@ -83,6 +88,20 @@ export class Introduction {
     passerVersAnimationSuivante(evt) {
         Util.detruireTousLesNoeud(this.elmParent, this.elmParent)
         this.fonction()
+    }
+
+    testBouton1(evt) {
+        var popup = document.getElementById("myPopup");
+        document.getElementById("myPopupImg").src="img/JoelDescription.png"; 
+        popup.classList.toggle("show");
+        
+    }
+
+    testBouton2(evt) {
+        var popup = document.getElementById("myPopup");
+        document.getElementById("myPopupImg").src="img/EllieDescription.png"; 
+        popup.classList.toggle("show");
+        
     }
 
 }

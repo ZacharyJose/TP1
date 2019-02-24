@@ -1117,6 +1117,18 @@ body {
     background-image: url("../img/FondMobile.jpg");
     background-repeat: repeat-y;
   }
+  #myPopupImg {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    position: relative;
+    right: 90px;
+    bottom: 24px;
+  }
 }
 
 @media only screen and (min-width: 500px) {
@@ -1261,6 +1273,29 @@ body {
   margin-left: -80px;
 }
 
+#myPopupImg {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  position: relative;
+  right: 155px;
+  bottom: 61px;
+}
+
+#myPopupImg:hover {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
 /* Popup arrow 
 .popup .popuptext::after {
 	
@@ -1276,26 +1311,25 @@ body {
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+  -webkit-animation: Position 1s;
+  animation: Position 1s;
 }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
+@-webkit-keyframes Position {
+  0% {
+    top: -800px;
   }
-  to {
-    opacity: 1;
+  100% {
+    top: 0px;
   }
 }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+@keyframes Position {
+  0% {
+    top: -800px;
   }
-  to {
-    opacity: 1;
+  100% {
+    top: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */

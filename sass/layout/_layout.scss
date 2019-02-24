@@ -172,6 +172,14 @@ background-repeat: no-repeat;
 		
 		}
 
+		#myPopupImg {
+			justify-content: center;
+			transform: scale(1);
+			transition-duration: 1s;
+			position: relative;
+    right: 90px;
+    bottom: 24px;
+			}
 	
 
 	}
@@ -263,6 +271,7 @@ background-repeat: no-repeat;
 			}
 		 }	
 
+		 
 	}
 
 	.conteneur {
@@ -335,6 +344,21 @@ background-repeat: no-repeat;
 	
 }
 
+#myPopupImg {
+	justify-content: center;
+	transform: scale(1);
+	transition-duration: 1s;
+	position: relative;
+	right: 155px;
+	bottom: 61px;
+	}
+
+#myPopupImg:hover {
+	justify-content: center;
+	transform: scale(1.5);
+	transition-duration: 1s;
+	}
+
 /* Popup arrow 
 .popup .popuptext::after {
 	
@@ -352,17 +376,18 @@ background-repeat: no-repeat;
 .popup .show {
 	
   visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+  -webkit-animation: Position 1s;
+  animation: Position 1s
 }
 
 /* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
+@keyframes Position {
+	0%   {top: -800px;}
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
+		 100% {top: 0px;}
+ }
+
+
+
+
+
